@@ -142,7 +142,7 @@
 <meta property="og:site_name" content="将将">
 <meta property="og:description" content="网站预览：钟冲的blog页面网站源代码托管于github：github仓库 HexoHexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 具体的安装及配置参考hexo官方文档。 在github新建repo新建仓库的名字必须是 yourname.github.io。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-13T14:42:20.756Z">
+<meta property="og:updated_time" content="2018-03-13T15:30:38.265Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何用github和hexo搭建私人blog">
 <meta name="twitter:description" content="网站预览：钟冲的blog页面网站源代码托管于github：github仓库 HexoHexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 具体的安装及配置参考hexo官方文档。 在github新建repo新建仓库的名字必须是 yourname.github.io。">
@@ -372,7 +372,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-03-13T22:42:20+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-03-13T23:30:38+08:00">
                 2018-03-13
               </time>
             
@@ -481,7 +481,7 @@
       
 
       
-        <p>网站预览：<a href="chongzhong.github.io">钟冲的blog页面</a><br>网站源代码托管于github：<a href="github.com/chongzhong">github仓库</a></p>
+        <p>网站预览：<a href="http://chongzhong.github.io">钟冲的blog页面</a><br>网站源代码托管于github：<a href="http://github.com/chongzhong" target="_blank" rel="noopener">github仓库</a></p>
 <h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
 <p>具体的安装及配置参考<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">hexo官方文档</a>。</p>
 <h2 id="在github新建repo"><a href="#在github新建repo" class="headerlink" title="在github新建repo"></a>在github新建repo</h2><p>新建仓库的名字必须是 yourname.github.io。</p>
@@ -979,6 +979,28 @@ var ap = new APlayer({
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'IXqWYIs76pdiXvMYjHnODSsT-gzGzoHsz# your leancloud application appid',
+        appKey: '8exYA0uWW0yd7yhEqdAl7Pio',
+        placeholder: '社会主义接班人',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
